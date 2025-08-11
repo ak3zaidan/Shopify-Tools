@@ -1,0 +1,63 @@
+
+**IMPORTANT:**
+   - MAKE SURE ONLY 1 INSTANCE OF FORWARD BOT IS RUNNING, OTHERWISE WEBHOOKS WILL DOUBLE SEND TO SUCCESS
+   - ONLY SET FAST MODE TO TRUE FOR BIG DROPS WHERE YOU WILL HIT A TON OF PAIRS. DONT KEEP FAST MODE RUNNING FOR MORE THAN 30 MIN, OTHERWISE YOU WILL GET RATE LIMITED BY DISCORD.
+   - ANY MODIFICATION YOU DO TO THE JSON FILE WILL ONLY APPLY ONCE YOU SAVE THE JSON FILE, STOP THE FORWARD BOT, THEN RESTART IT.
+**IMPORTANT:**
+
+REQUIRMENTS:
+    - PIP INSTALLED ON MACHINE
+    - DISCORD CLIENT API INSTALLED ON MACHINE
+    - PYTHON INSTALLED ON MACHINE
+
+TO RUN:
+    - NAVIGATE TO DIRECTORY "ForwardPro", YOU CAN USE THE "cd" command in the terminal to cd into "ForwardPro"
+    - RUN THE COMMAND: python ForwardPro.py
+    - NOW ITS RUNNING
+
+Suggested ACO form instructions for profile name:
+    - You must include your discord username in the profile name, otherwise we will not run you because we cannot collect PAS 
+    - If you want to get tagged and dmed for success, include your discord UID at the start of the profile name
+
+I would adivse you to put these instructions in your ACO forms so your users know how to format their profile names.
+
+To tag and dm users you have to follow this Profile Name format for all bots (For Bookie since it doesnt have a profile name but a Account name instead follow the format the same way for the account name).
+
+- Profile Name format:
+    "<discord user UID><1 white space><anything they want>"
+
+
+- Profile Name Example:
+    "452345235324 Artemis1"
+    - with this example the user with uid "452345235324" will be tagged and dmed and "Artemis1" will appear as the profile name in the webhook
+
+- Profile Name Example
+    "452345235324"
+    - This is also valid but in this case the user with uid "452345235324" will be tagged and dmed and the profile name in the webhook will also be "452345235324"
+
+- Profile Name Example
+    "ArtemisProfile1"
+    - This is also a valid profile name but in this case no one will be tagged or dmed, but "ArtemisProfile1" will be used in the webhook as the profile
+
+
+Note:
+    When you make any changes to the json file, save it with "command S" or go file and press save. Then rerun the forward bot.
+
+
+**These are channel IDS**
+
+1222904276083282063     : sole central success channel
+1260426086123175947     : chef success channel
+1222904349181743125     : Sam success channel
+1222904106050392214     : GS Sneaks succes channel
+1230983460685090866     : Ivan success channel
+1222904203320758393     : ghrymes success channel
+
+**To mass copy all use this:**
+
+1222904276083282063,
+1260426086123175947,
+1222904349181743125,
+1222904106050392214,
+1230983460685090866,
+1222904203320758393

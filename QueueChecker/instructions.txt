@@ -1,0 +1,40 @@
+
+Proxies
+- input proxies in the proxies.txt file, this is optional but highley recommended especially if your delay is low
+- proxies should go one per line in the format: host:port:username:password
+- if you do not supply proxies then the bot can eventually get rate limited by Shopify
+
+Discord
+- If you would like to send the queue updates to a Discord Channel then supply a webhook in the config.json file in the `DiscordWebHook` field
+- The `DiscordWebHook` is optional and leaving this blank will result in the bot only printing the queue times to the terminal
+
+Config
+- The timezone is currently set to Pacific Time (PST), if you would like to change it then modify the json entry with the correct timezone provided below
+- The json entry ThreadsPerSite is a integer that tells the bot how much to multi-thread each site queue check. Setting this as 3 for example means that 3 threads will check the queue every x (Delay) PER SITE. If you want many threads per site then you need proxies to prevent proxy blocks
+- The config.json file is also where you define what sites you want to check, you can put as many base urls to variants as you want
+- The `BaseUrlsToRandomVariants` json entry is where you do this, you can include as many string elements into this array as you want
+- they should be comma seperated
+- An entry could look like "us.supreme.com,42728221868303" for example where the part before the comma is the base url and the part after is any random items variant from the website. This random variant does not need to be the variant of the item releasing
+- We need a random variant from the site to be able to check the queues efficiently.
+- If you do not have a random variant then keep the spot after the comma empty such as "us.supreme.com,". By doing so the bot will attempt to first get a random variant. Usually (90 percent of the time) the bot will be able to find a random variant on its own.
+- The delay in the config.json file represents the delay in milliseconds between each check, if your not sure what to set this to, then use 500-1000 if you want fast updates or 3500 for normal speed updates
+
+Important
+**After you make any changes to config.json, then save the file before running the bot**
+
+
+Here's a list of some common timezones along with their tz database names, similar to how you've got America/Los_Angeles for Pacific Standard Time (PST):
+Eastern Standard Time (EST) - America/New_York
+Central Standard Time (CST) - America/Chicago
+Mountain Standard Time (MST) - America/Denver
+Pacific Standard Time (PST) - America/Los_Angeles
+Alaskan Standard Time (AKST) - America/Anchorage
+Hawaii-Aleutian Standard Time (HST) - Pacific/Honolulu
+British Summer Time (BST) - Europe/London
+Central European Time (CET) - Europe/Paris
+Eastern European Time (EET) - Europe/Athens
+India Standard Time (IST) - Asia/Kolkata
+Japan Standard Time (JST) - Asia/Tokyo
+Australian Eastern Standard Time (AEST) - Australia/Sydney
+
+use the part after the dash

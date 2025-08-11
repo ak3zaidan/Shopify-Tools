@@ -1,0 +1,43 @@
+REQUIRMENTS:
+    - PIP INSTALLED ON MACHINE
+    - DISCORD CLIENT API INSTALLED ON MACHINE
+    - PYTHON INSTALLED ON MACHINE
+    - Once python is downloaded, open terminal and run "pip install requests_go"
+
+"Filter": "jordan jacksprofile"
+    - keep this filter an empty string like "" if you dont want to filter anything. otherwise include space seperated keywords, these keywords will be checked and if atleast 1 keyword is present anywhere in the order, then it will be included in the csv. This is not case sensitive
+
+TO RUN:
+    - NAVIGATE TO DIRECTORY "CsvPro", YOU CAN USE THE "cd" command in the terminal to cd into "CsvPro"
+    - RUN THE COMMAND: python CsvPro.py
+    - WAIT FOR CLIENT TO CONNECT THEN ENTER THE DESIRED NUMBER OF DAYS TO SCRAPE
+    - YOU WILL GET AN ERROR IF YOU DO NOT ANSWER THE PROMPT WITHIN A FEW SECONDS, IGNORE THE ERROR.
+    - WAIT FOR CSV FILE TO GENERATE: THIS SHOULD TAKE SECONDS TO MINUITES DEPENDING ON HOW MANY DAYS YOU PICKED. IF YOU CHOSE 1-5 DAYS IT SHOULD TAKE ABOUT 5 SECONDS. IF YOU CHOSE 100 DAYS YOU MIGHT HAVE TO WAIT FOR A MIN OR TWO
+
+READ HERE:
+
+If you want to scrape only certain channels then go to the json file and only include those channels in the "ChannelToScrape" list.
+You can just delete the ones you dont want and then come back to this txt file to copy and paste them back in.
+
+Note:
+After you update the "ChannelToScrape" list, save the json file then rerun the csv bot. When you make any changes to the json save it.
+
+
+
+**These are channel IDS**
+
+1222904276083282063     : sole central success channel
+1260426086123175947     : chef success channel
+1222904349181743125     : Sam success channel
+1222904106050392214     : GS Sneaks succes channel
+1230983460685090866     : Ivan success channel
+1222904203320758393     : ghrymes success channel
+
+**To mass copy all use this:**
+
+1222904276083282063,
+1260426086123175947,
+1222904349181743125,
+1222904106050392214,
+1230983460685090866,
+1222904203320758393

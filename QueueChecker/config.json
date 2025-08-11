@@ -1,0 +1,9 @@
+{
+    "DiscordWebHook": "https://discord.com/api/webhooks/1346759816814526504/u5OdMolI4IDZ1Wc95fk-QOyUvKsUZPQwPNVEulRGS9p9q56icksHNUfU4xTR-X5xAJ1G",
+    "BaseUrlsToRandomVariant": [
+        "kith.com,45129293299840"
+    ],
+    "Delay": 1000,
+    "ThreadsPerSite": 5,
+    "TimeZone": "America/Los_Angeles"
+}

@@ -1,0 +1,33 @@
+
+Proxies
+- input proxies in the proxies.txt file, this is optional but highley recommended if the item is not live and the bot has to check multiple times
+- proxies should go one per line in the format: host:port:username:password
+- if you do not supply proxies then the bot can eventually get rate limited by Shopify
+
+Discord
+- If you would like to send the scrapped variants to a Discord Channel then supply a webhook in the config.json file in the `DiscordWebHook` field
+- The `DiscordWebHook` is optional and leaving this blank will result in the bot only printing the scrapped variants
+
+Config
+- The config.json file is also where you define what you want to scrape 
+- The `BaseUrlandInput` json entry is where you do this, you can include as many string elements into this array as you want
+- they should be in the format: <base url>,<input>
+- they should be comma seperated
+- the base url is "www.shoepalace.com" for example
+- The delay in the config.json file represents the delay in milliseconds between each retry, if your not sure what to set this to, then use 3500
+
+Input
+For Sites:
+    - Supreme, Palace, Denim Tears, LadyGaga
+        - Input can be:
+            - URL: which is just the full url of the item 
+            - Keywords: must be space seperated, capitilzation does NOT matter, to remove keywords from the search then use the dash "-" at the start. For example "Jordan -Bogo"
+
+For any other shopify site:
+    - Input can be:
+        - Handle: which is the handle of the url, this is the part in the item URL that comes after "products/" and is usually a lowercased string of words seperated by dashes
+        - SKU: is just the normal sku of the item
+        - Keywords: must be space seperated, capitilzation does NOT matter, to remove keywords from the search then use the dash "-" at the start. For example "Jordan -Bogo"
+
+Important
+**After you make any changes to config.json, then save the file before running the bot**

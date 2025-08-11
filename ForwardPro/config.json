@@ -1,0 +1,18 @@
+{
+    "FAST_REFRESH_MODE": false,
+    "TOKEN": "",
+    "ChannelToMonitor": [
+        1222904276083282063,
+        1260426086123175947,
+        1222904349181743125,
+        1222904106050392214,
+        1230983460685090866,
+        1222904203320758393
+    ],
+    "AcoSuccessChannel": 1229253668662935563,
+    "EmbedColor": "0xCAB2FB",
+    "EmbedTitle": "Artemis ACO Success",
+    "Webhooks": [
+        "https://discord.com/api/webhooks/1389413034262270083/4SxgTHStxhrYDldILosSUB_3M_xykS0RzOCtXPgoaJNAUKFrbAP2QA0Z-3IzItC7UuGG"
+    ]
+}
